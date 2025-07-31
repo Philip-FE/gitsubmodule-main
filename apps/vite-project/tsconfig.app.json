@@ -6,6 +6,9 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
+    "paths": {
+      "@gosh/*": ["../../gosh-libs/*/src"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -23,5 +26,16 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {
+      "path": "../../gosh-libs/components/tsconfig.json"
+    },
+    {
+      "path": "../../gosh-libs/icons/tsconfig.json"
+    },
+    {
+      "path": "../../gosh-libs/utils/tsconfig.json"
+    }
+  ]
 }
