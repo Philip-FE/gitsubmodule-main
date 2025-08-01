@@ -1,3 +1,4 @@
 [submodule "gosh-libs"]
 	path = gosh-libs
 	url = git@github.com:Philip-FE/gitsubmodule-sub.git
+	branch = main
